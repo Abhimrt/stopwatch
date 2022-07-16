@@ -73,3 +73,55 @@ body{
     }
 }
 
+
+/* lg */
+@media (min-width: 1320px) {
+    html {
+      font-size: 100% !important;
+    }
+  }
+  
+  /* md */
+  @media (min-width: 1100px) and (max-width: 1319px) {
+    html {
+      font-size: 80% !important;
+    }
+  }
+  
+  /* sm */
+  @media (min-width: 930px) and (max-width: 1100px) {
+    html {
+      font-size: 70% !important;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 930px) {
+    html {
+      font-size: 55% !important;
+    }
+  }
+  
+  /* xs */
+  @media (max-width: 767px) {
+    html {
+      font-size: 40% !important;
+    }
+  }
+  
+  /* XS Portrait */
+  @media (max-width: 570px) {
+    html {
+      font-size: 30% !important;
+    }
+  }
+  
+  @media (max-width: 412px) {
+    html {
+        font-size: 20% !important;
+      }
+  }
+  @media (max-width: 280) {
+    html {
+        font-size: 10% !important;
+      }
+  }
+  
