@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr:grey ;
+}
+
+body {
+  width: 95vw;
+  height: 100vh;
+  margin: auto;
+  background-size: contain;
+  background-color: #000;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+body::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 10px;
+  transform: translateY(50%);
+}
+
+.box {
+  width: 100%;
+  height: 70vh;
+  transform-style: preserve-3d;
+  transition: 0.4s all ease-out;
+  position: relative;
+}
+.box::before {
+  content: attr(data-type);
+  position: absolute;
+  color: rgb(50, 50, 50);
+  font-size: 10rem;
+  top: -5rem;
+  right: 0;
+}
+.box .for, .box .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: gray;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  font-size: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Stint Ultra Condensed", cursive;
+}
+.box .for span, .box .back span {
+  color: white;
+}
+.box .back {
+  background-color: #000;
+  filter: blur(10px);
+  transform: rotateX(-180deg);
+}/*# sourceMappingURL=main.css.map */
